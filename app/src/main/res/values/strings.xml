@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Geografía</string>
+    <string name="quePoner">Pepuchito</string>
+    <string name="saludo">Hi man</string>
+    <string name="saludoInicial">Hola samigos</string>
+    <string name="saludoFinal">Adios muchachos</string>
+    <string name="labelSaludo">Saludo</string>
+    <string name="poblacionPorPais.pais.label">País</string>
+    <string name="poblacionPorPais.poblacion.label">Población</string>
+    <string name="poblacionPorPais.argentina.nombre">Argentina</string>
+    <string name="poblacionPorPais.brasil.nombre">Brasil</string>
+    <string name="poblacionPorPais.paraguay.nombre">Paraguay</string>
+    <string name="poblacionPorPais.paises.label">Países</string>
+    <string name="detalleDePais.poblacion.label">Población</string>
+    <string name="detalleDePais.superficie.label">Superficie</string>
+    <string name="worldBankFixedData.arg.electricityAccess">[{XXpageXX:1,XXpagesXX:1,XXper_pageXX:50,XXlastupdatedXX:XX2017-09-12XX,XXtotalXX:9},[{XXindicatorXX:{XXidXX:XX1.1_ACCESS.ELECTRICITY.TOTXX,XXvalueXX:XXAccess to electricity (% of total population)XX},XXcountryXX:{XXidXX:XXARXX,XXvalueXX:XXArgentinaXX},XXcountryiso3codeXX:XXARGXX,XXdateXX:XX2008XX,XXvalueXX:98.02481842,XXunitXX:XXXX,XXobs_statusXX:XXXX,XXdecimalXX:2},{XXindicatorXX:{XXidXX:XX1.1_ACCESS.ELECTRICITY.TOTXX,XXvalueXX:XXAccess to electricity (% of total population)XX},XXcountryXX:{XXidXX:XXARXX,XXvalueXX:XXArgentinaXX},XXcountryiso3codeXX:XXARGXX,XXdateXX:XX2007XX,XXvalueXX:97.62935638,XXunitXX:XXXX,XXobs_statusXX:XXXX,XXdecimalXX:2},{XXindicatorXX:{XXidXX:XX1.1_ACCESS.ELECTRICITY.TOTXX,XXvalueXX:XXAccess to electricity (% of total population)XX},XXcountryXX:{XXidXX:XXARXX,XXvalueXX:XXArgentinaXX},XXcountryiso3codeXX:XXARGXX,XXdateXX:XX2006XX,XXvalueXX:97.25093842,XXunitXX:XXXX,XXobs_statusXX:XXXX,XXdecimalXX:2},{XXindicatorXX:{XXidXX:XX1.1_ACCESS.ELECTRICITY.TOTXX,XXvalueXX:XXAccess to electricity (% of total population)XX},XXcountryXX:{XXidXX:XXARXX,XXvalueXX:XXArgentinaXX},XXcountryiso3codeXX:XXARGXX,XXdateXX:XX2005XX,XXvalueXX:96.88382721,XXunitXX:XXXX,XXobs_statusXX:XXXX,XXdecimalXX:2},{XXindicatorXX:{XXidXX:XX1.1_ACCESS.ELECTRICITY.TOTXX,XXvalueXX:XXAccess to electricity (% of total population)XX},XXcountryXX:{XXidXX:XXARXX,XXvalueXX:XXArgentinaXX},XXcountryiso3codeXX:XXARGXX,XXdateXX:XX2004XX,XXvalueXX:96.52507019,XXunitXX:XXXX,XXobs_statusXX:XXXX,XXdecimalXX:2},{XXindicatorXX:{XXidXX:XX1.1_ACCESS.ELECTRICITY.TOTXX,XXvalueXX:XXAccess to electricity (% of total population)XX},XXcountryXX:{XXidXX:XXARXX,XXvalueXX:XXArgentinaXX},XXcountryiso3codeXX:XXARGXX,XXdateXX:XX2003XX,XXvalueXX:96.17076111,XXunitXX:XXXX,XXobs_statusXX:XXXX,XXdecimalXX:2},{XXindicatorXX:{XXidXX:XX1.1_ACCESS.ELECTRICITY.TOTXX,XXvalueXX:XXAccess to electricity (% of total population)XX},XXcountryXX:{XXidXX:XXARXX,XXvalueXX:XXArgentinaXX},XXcountryiso3codeXX:XXARGXX,XXdateXX:XX2002XX,XXvalueXX:95.81700897,XXunitXX:XXXX,XXobs_statusXX:XXXX,XXdecimalXX:2},{XXindicatorXX:{XXidXX:XX1.1_ACCESS.ELECTRICITY.TOTXX,XXvalueXX:XXAccess to electricity (% of total population)XX},XXcountryXX:{XXidXX:XXARXX,XXvalueXX:XXArgentinaXX},XXcountryiso3codeXX:XXARGXX,XXdateXX:XX2001XX,XXvalueXX:95.51106347,XXunitXX:XXXX,XXobs_statusXX:XXXX,XXdecimalXX:2},{XXindicatorXX:{XXidXX:XX1.1_ACCESS.ELECTRICITY.TOTXX,XXvalueXX:XXAccess to electricity (% of total population)XX},XXcountryXX:{XXidXX:XXARXX,XXvalueXX:XXArgentinaXX},XXcountryiso3codeXX:XXARGXX,XXdateXX:XX2000XX,XXvalueXX:95.09555817,XXunitXX:XXXX,XXobs_statusXX:XXXX,XXdecimalXX:2}]]</string>
+    <string name="poblacionPorPais.accesoElectricidad.label">Acceso a electricidad</string>
+</resources>
