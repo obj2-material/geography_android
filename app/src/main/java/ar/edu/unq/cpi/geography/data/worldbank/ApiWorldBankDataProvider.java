@@ -13,11 +13,10 @@ import ar.edu.unq.cpi.geography.tools.ApplicationToolset;
  * Created by Carlos on 15/11/2017.
  */
 
-// 1.1_ACCESS.ELECTRICITY.TOT
 public class ApiWorldBankDataProvider extends WorldBankDataProvider {
-    public void fetchIndicatorData2000to2008(String countryCode, String indicator, WBCountryDataConsumer theFunction) {
+    public void fetchIndicatorData2000to2010(String countryCode, String indicator, WBCountryDataConsumer theFunction) {
         String url =  "http://api.worldbank.org/v2/countries/" + countryCode
-                + "/indicators/" + indicator + "?date=2000:2008"
+                + "/indicators/" + indicator + "?date=2000:2010"
                 + "&format=json";
         JsonArrayRequest jsArrayRequest = new JsonArrayRequest
                 (Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
