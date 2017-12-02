@@ -2,6 +2,7 @@ package ar.edu.unq.cpi.geography.view.population;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -54,10 +55,12 @@ public class PoblacionPorPaisActivity extends AppCompatActivity {
                 // este es un ejemplo de comunicación *asincrónica*
                 // entre la Activity y el DataProvider
                 (data) -> {
+                    Log.d("PoblacionPorPais", "adentro del bloque");
                     this.nombrePais.setText(nombreDePais);
                     this.poblacionPais.setText(String.valueOf(data.getPopulation()));
                 }
         );
+        Log.d("PoblacionPorPais", "afuera del bloque");
     }
 
 }

@@ -28,12 +28,20 @@ public class ListaDePaisesAdapter extends ArrayAdapter<CountryData> {
 
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+        // obtengo el elemento grafico que hay que completar
+        // analogo al this.findViewById de casos mas sencillo
         if (convertView == null) {
             convertView = this.inflater.inflate(android.R.layout.simple_list_item_1, parent, false);
         }
         TextView whereTextMustBeSet = (TextView) convertView;
+
+        // obtengo el objeto que tengo que mostrar
         CountryData item = this.getItem(position);
+
+        // hago el "binding a pedal"
         whereTextMustBeSet.setText(item.getSpanishName());
+
+        // OJO!! hay que devolver el view
         return convertView;
     }
 }

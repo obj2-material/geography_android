@@ -25,7 +25,7 @@ public class DetalleDePaisActivity extends AppCompatActivity {
         TextView population = this.findViewById(R.id.detalleDePais_poblacion);
         TextView superficie = this.findViewById(R.id.detalleDePais_superficie);
 
-        CountryDataProvider.api().fetchCountryData(countryCode, (data) -> {
+        CountryDataProvider.fixed().fetchCountryData(countryCode, (data) -> {
             population.setText(String.valueOf(data.getPopulation()));
             superficie.setText(String.valueOf(data.getArea()));
         });
