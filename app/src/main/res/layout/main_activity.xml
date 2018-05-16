@@ -55,6 +55,7 @@
             android:layout_marginStart="76dp"
             android:layout_marginTop="300dp"
             android:text="Poblacion por país"
+            android:onClick="@{controller::irAPoblacionPorPais}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -65,6 +66,7 @@
             android:layout_marginStart="76dp"
             android:layout_marginTop="380dp"
             android:text="Lista de países"
+            android:onClick="@{controller::irAListaDePaises}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </android.support.constraint.ConstraintLayout>
