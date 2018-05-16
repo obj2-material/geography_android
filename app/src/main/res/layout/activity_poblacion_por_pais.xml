@@ -73,6 +73,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="300dp"
             android:text="@string/poblacionPorPais.argentina.nombre"
+            android:onClick='@{() -> controller.setCountryName("Argentina")}'
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -83,6 +84,7 @@
             android:layout_marginStart="135dp"
             android:layout_marginTop="300dp"
             android:text="@string/poblacionPorPais.brasil.nombre"
+            android:onClick='@{() -> controller.setCountryName("Brasil")}'
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -93,6 +95,7 @@
             android:layout_marginStart="240dp"
             android:layout_marginTop="300dp"
             android:text="@string/poblacionPorPais.paraguay.nombre"
+            android:onClick='@{() -> controller.setCountryName("Paraguay")}'
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
