@@ -1,62 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="ar.edu.unq.cpi.geography.view.main.MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/saludoLabel"
-        android:layout_width="207dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="100dp"
-        android:text="@string/labelSaludo"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <data>
+        <variable name="controller" type="ar.edu.unq.cpi.geography.view.main.MainActivityControlller" />
+    </data>
 
-    <TextView
-        android:id="@+id/saludo"
-        android:layout_width="207dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="140dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Aca va el saludo" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="ar.edu.unq.cpi.geography.view.main.MainActivity">
 
-    <Button
-        android:id="@+id/cambiarSaludoButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="220dp"
-        android:text="Cambiar saludo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/saludoLabel"
+            android:layout_width="207dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="100dp"
+            android:text="@string/labelSaludo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/irAPoblacionPorPais"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="300dp"
-        android:text="Poblacion por país"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/saludo"
+            android:layout_width="207dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="140dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:visibility="visible"
+            android:text="@{controller.saludo}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Aca va el saludo" />
 
-    <Button
-        android:id="@+id/irAListaDePaises"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="380dp"
-        android:text="Lista de países"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</android.support.constraint.ConstraintLayout>
+        <Button
+            android:id="@+id/cambiarSaludoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="220dp"
+            android:text="Cambiar saludo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/irAPoblacionPorPais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="300dp"
+            android:text="Poblacion por país"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/irAListaDePaises"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="380dp"
+            android:text="Lista de países"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</layout>

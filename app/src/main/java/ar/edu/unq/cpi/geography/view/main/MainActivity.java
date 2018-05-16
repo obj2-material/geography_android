@@ -1,12 +1,14 @@
 package ar.edu.unq.cpi.geography.view.main;
 
 import android.content.Intent;
+import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import ar.edu.unq.cpi.geography.databinding.ActivityMainBinding;
 import ar.edu.unq.cpi.geography.tools.ApplicationToolset;
 import ar.edu.unq.cpi.geography.view.population.ListaDePaisesActivity;
 import ar.edu.unq.cpi.geography.R;
@@ -21,18 +23,20 @@ import ar.edu.unq.cpi.geography.view.population.PoblacionPorPaisActivity;
  */
 public class MainActivity extends AppCompatActivity {
 
+    MainActivityControlller controller;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        ApplicationToolset.setContext(this);
+        controller = new MainActivityControlller(getString(R.string.saludoInicial));
+        ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        binding.setController(controller);
 
-        TextView saludo = this.findViewById(R.id.saludo);
-        saludo.setText(R.string.saludoInicial);
+        ApplicationToolset.setContext(this);
 
         Button botonCambiarSaludo = this.findViewById(R.id.cambiarSaludoButton);
         botonCambiarSaludo.setOnClickListener((View v) -> {
-            saludo.setText(R.string.saludoFinal);
+            controller.setSaludo(getString(R.string.saludoInicial));
         });
 
         /*
