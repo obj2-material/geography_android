@@ -2,16 +2,15 @@ package ar.edu.unq.cpi.geography.view.main;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
-import ar.edu.unq.cpi.geography.databinding.ActivityMainBinding;
+import ar.edu.unq.cpi.geography.R;
+import ar.edu.unq.cpi.geography.databinding.MainActivityBinding;
 import ar.edu.unq.cpi.geography.tools.ApplicationToolset;
 import ar.edu.unq.cpi.geography.view.population.ListaDePaisesActivity;
-import ar.edu.unq.cpi.geography.R;
 import ar.edu.unq.cpi.geography.view.population.PoblacionPorPaisActivity;
 
 /**
@@ -29,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         controller = new MainActivityControlller(getString(R.string.saludoInicial));
-        ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        MainActivityBinding binding = DataBindingUtil.setContentView(this, R.layout.main_activity);
         binding.setController(controller);
 
         ApplicationToolset.setContext(this);
