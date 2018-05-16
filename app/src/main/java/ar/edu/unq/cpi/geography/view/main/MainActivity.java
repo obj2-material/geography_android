@@ -33,11 +33,6 @@ public class MainActivity extends AppCompatActivity {
 
         ApplicationToolset.setContext(this);
 
-        Button botonCambiarSaludo = this.findViewById(R.id.cambiarSaludoButton);
-        botonCambiarSaludo.setOnClickListener((View v) -> {
-            controller.setSaludo(getString(R.string.saludoInicial));
-        });
-
         /*
          Pantalla que muestra la poblacion de Argentina, Brasil o Paraguay
          Usa RestrictedCountryData, package ar.edu.unq.cpi.geography.data.restricted,
